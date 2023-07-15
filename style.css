@@ -1,0 +1,133 @@
+
+*{
+    box-sizing: border-box;
+    font-family: 'Kumbh Sans';
+    font-size: 18px;
+}
+
+body{
+  background-color: hsl(185, 75%, 23%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: calc(100vh - 0.1px);
+  padding: 0px;
+  overflow: hidden;
+}
+
+#card-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-width: 375px;
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: white;
+}
+
+#card-profile-img{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+#card-img{
+  width: 100%;
+}
+#profile-pic{
+  border-radius: 50%;
+  position: relative;
+  top: -50px;
+  border: 2px solid white;
+}
+
+#name-age-place{
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  top: -30px;
+}
+#name{}
+#name span#age{
+  position: relative;
+  left: 10px;
+  color: hsl(227, 10%, 46%);
+}
+#place{
+  position: relative;
+  top: -20px;
+  font-weight: 400;
+  font-size: 0.9rem;
+  letter-spacing: 0px;
+  color: hsl(0, 0%, 59%);
+}
+
+#followers-likes-photos{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  position: relative;
+  top: -10px;
+}
+#followers, #likes, #photos{
+  text-align: center;
+  width: 25%;
+  line-height: 10px;
+}
+
+h2{
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+p{
+  font-size: 0.8rem;
+  color: hsl(227, 10%, 46%);
+  letter-spacing: 2px;
+}
+
+#bg-top{
+  width: 90%;
+  position: absolute;
+  top: -20%;
+  left: -50%;
+  z-index: -1;
+}
+
+#bg-bottom{
+  width: 90%;
+  position: absolute;
+  bottom: -20%;
+  right: -50%;
+  z-index: -1;
+}
+#bg-top img, #bg-bottom img{
+  width: 100%;
+}
+
+@media (min-width: 614px){
+
+  #bg-top{
+    width: 63%;
+    position: absolute;
+    top: -70%;
+    left: -15%;
+    z-index: -1;
+  }
+  
+  #bg-bottom{
+    width: 63%;
+    position: absolute;
+    bottom: -80%;
+    right: -15%;
+    z-index: -1;
+  }
+
+}
